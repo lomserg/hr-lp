@@ -140,7 +140,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p,
+    gap: 1rem;
+    .section__content__text {
+        max-width: 50%;
+    }
+    
     .section__content__img {
         max-width: 50%;
     }
@@ -149,28 +153,45 @@
 .item {
     display: flex;
 }
-
+.advantages__container  {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
 .advantages {
     display: flex;
     margin-top: 3rem;
 
     &__item {
         display: flex;
-        gap: 1rem;
-        flex-basis: 100%;
+        width: 450px;
+        gap: 1rem
+      }
+    &__wrapper {
+      width: 70%;
+      p {margin-top: 1rem;}
+      
+    }
+    &__icon {
+      display: flex;
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
     }
 
-    &__number {
-        background-color: #38572A;
-        border-radius: 50%;
-        height: 25px;
-        width: 25px;
-        padding: 1rem;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    &__icon::after {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 100px;
+    height: 100px;
+    position: absolute;
+ }
 }
 
 .tasks__wrapper {
@@ -181,7 +202,31 @@
     margin-top: 4rem;
 
     .tasks__item {
-        flex-basis: 100%;
+        flex-basis: 30%;
+    }
+    .tasks__title {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .tasks__circle {
+      background-color: #95C540;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul {
+      list-style-position: inside;
+    }
+
+    li {
+      margin-left: 1rem;
     }
 }
 
@@ -206,11 +251,20 @@
 .review__slider {
     margin-top: 6rem;
 }
-.review__slider__img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-   
+
+.review__circular {
+  display: inline-block;
+  position: relative; 
+  width: 100px; 
+  height: 100px; 
+  overflow: hidden; 
+  border-radius: 50%;
+}
+.review__img {
+  width: 100%;
+  height: 100%;
+  // margin-left: -5px;
+  object-fit: cover;
 }
 
 .review__slider__item {
@@ -218,6 +272,8 @@
     border-radius: 4px;
     padding: 28px 27px 47px;
     position: relative;
+    // height: 445px !important;
+    
 }
 
 .review__slider__head {

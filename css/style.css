@@ -277,8 +277,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
-.section__content p,
+.section__content .section__content__text {
+  max-width: 50%;
+}
 .section__content .section__content__img {
   max-width: 50%;
 }
@@ -287,25 +290,46 @@ a {
   display: flex;
 }
 
+.advantages__container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
 .advantages {
   display: flex;
   margin-top: 3rem;
 }
 .advantages__item {
   display: flex;
+  width: 450px;
   gap: 1rem;
-  flex-basis: 100%;
 }
-.advantages__number {
-  background-color: #38572A;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  padding: 1rem;
-  color: #fff;
+.advantages__wrapper {
+  width: 70%;
+}
+.advantages__wrapper p {
+  margin-top: 1rem;
+}
+.advantages__icon {
   display: flex;
+  width: 30%;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.advantages__icon::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
 }
 
 .tasks__wrapper {
@@ -316,7 +340,28 @@ a {
   margin-top: 4rem;
 }
 .tasks__wrapper .tasks__item {
-  flex-basis: 100%;
+  flex-basis: 30%;
+}
+.tasks__wrapper .tasks__title {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.tasks__wrapper .tasks__circle {
+  background-color: #95C540;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tasks__wrapper ul {
+  list-style-position: inside;
+}
+.tasks__wrapper li {
+  margin-left: 1rem;
 }
 
 .review {
@@ -341,10 +386,20 @@ a {
   margin-top: 6rem;
 }
 
-.review__slider__img {
-  width: 90px;
-  height: 90px;
+.review__circular {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
   border-radius: 50%;
+}
+
+.review__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .review__slider__item {
@@ -562,7 +617,8 @@ footer .footer__text {
     flex-direction: column;
   }
   .section__content p, .section__content .section__content,
-.section__content .section__content__img {
+.section__content .section__content__img,
+.section__content .section__content__text {
     max-width: 100%;
   }
   .advantages {
