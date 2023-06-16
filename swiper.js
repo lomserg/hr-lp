@@ -3,10 +3,14 @@ var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 2,
   spaceBetween: 30,
   freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+ pagination: {
+   el: '.swiper-pagination',
+ },
   breakpoints: {  
    
     // when window width is <= 320px     
@@ -26,5 +30,5 @@ var swiper = new Swiper(".mySwiper", {
        spaceBetween: 30     
     } 
 
- } 
+ }
 });

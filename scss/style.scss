@@ -283,13 +283,7 @@
    padding-bottom: 1rem;
 }
 
-.review__slider__quote img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    max-width: 100%;
-    height: auto;
-}
+
 
 .form {
     background: #FBBA00;
@@ -384,6 +378,21 @@ footer {
     }
 
     
+}
+
+.review__slider__quote img {
+    position: absolute;
+ 
+    right: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff !important;
+}
+.swiper-pagination-bullet-active {
+    background: #fff !important;
 }
 
 @import 'mobile';
