@@ -38,10 +38,10 @@ try {
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('fullsatsuma@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('ecotelecom.career@gmail.com', 'Заявка с лендинга hr.ecotelecom'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('fullsatsuma@gmail.com');
+  $mail->addAddress('ecotelecom.career@gmail.com');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
