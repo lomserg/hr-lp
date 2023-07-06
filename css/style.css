@@ -391,9 +391,9 @@ a {
   display: inline-block;
   position: relative;
   width: 100px;
-  height: 100px;
   overflow: hidden;
   border-radius: 50%;
+  aspect-ratio: 1;
 }
 
 .review__img {
