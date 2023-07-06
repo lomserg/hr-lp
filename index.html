@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="libs/inputmask.min.js"></script>
+    <script defer src="libs/just-validate3.3.3.min.js"></script>
     <script src="./swiper.js" defer></script>
+    <script src="./script-new.js" defer></script>
     <title>Document</title>
-    
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -37,9 +39,9 @@
             <div class="showcase-content">
                 <div class="showcase__left">
                     <h1>Оператор call-центра</h1>
-                    <p class="my-1">
+                    <!-- <p class="my-1">
                         Работа с действующими клиентами интернет-провайдера.
-                    </p>
+                    </p> -->
                     <div>
                         <a href="#" class="btn-primary">Подробнее</a>
                         <a href="#" class="btn-secondary">Откликнуться</a>
@@ -203,9 +205,9 @@
                                     <p class="clr-white" style="opacity: .7;">Оператор call центра</p>
                                 </div>
                             </div>
-                            <div class="review__slider__quote">
+                            <!-- <div class="review__slider__quote">
                                 <img src="./images/quote-img.png" alt="">
-                            </div>
+                            </div> -->
                             <div class="review__slider__body">
                                 <p class="clr-white">Работала в компании с января 2023 года. Уже был опыт в на подобных должностях, но именно это место останется для меня приятным и теплым воспоминанием. В первую очередь — это классный коллектив, постоянные тимбилдинги и совместные игры на сплочение команды. Также с уверенностью могу сказать, что это именно то место, где работают на качество, а не количество, с помощью постоянных планерок и индивидуальных занятий.</p>
                             </div>
@@ -218,9 +220,9 @@
                                     <p class="clr-white" style="opacity: .7;">Оператор call центра</p>
                                 </div>
                             </div>
-                            <div class="review__slider__quote">
+                            <!-- <div class="review__slider__quote">
                                 <img src="./images/quote-img.png" alt="">
-                            </div>
+                            </div> -->
                             <div class="review__slider__body">
                                 <p class="clr-white">Работаю в компании с февраля 2023 г. на должности оператора call-центра. Работа очень интересная, опыт который дается тут пригодится в жизни, прекрасный коллектив, всегда поможет и выручит, совмещаю с учебой. Я считаю, что эта работа одна из лучших на рынке, так как помогает юным людям понять, как все устроено и дает возможность, опробовать свои навыки в продажах.</p>
                             </div>
@@ -233,9 +235,9 @@
                                     <p class="clr-white" style="opacity: .7;">Оператор call центра</p>
                                 </div>
                             </div>
-                            <div class="review__slider__quote">
+                            <!-- <div class="review__slider__quote">
                                 <img src="./images/quote-img.png" alt="">
-                            </div>
+                            </div> -->
                             <div class="review__slider__body">
                                 <p class="clr-white">Приятный коллектив, очень дружелюбное начальство, готовое поддержать по любому вопросу, уютный офис, бесплатные печеньки, чай и кофе. Отличный вариант для совмещения с учебой или другой работой, возможность профессионального роста. Ни разу не пожалел, что пришел в компанию.</p>
                             </div>
@@ -249,9 +251,9 @@
                                     <p class="clr-white" style="opacity: .7;">Оператор call-центра</p>
                                 </div>
                             </div>
-                            <div class="review__slider__quote">
+                            <!-- <div class="review__slider__quote">
                                 <img src="./images/quote-img.png" alt="">
-                            </div>
+                            </div> -->
                             <div class="review__slider__body">
                                 <p class="clr-white">Работаю с марта 2022, нет ни одной мысли оставлять это дело. Здесь - мой лучший опыт в этой сфере. Отличный отзывчивый коллектив, быстрое решение возникающих вопросов, ну и отличная система карьерного роста, по сей день доволен :)</p>
                             </div>
@@ -265,9 +267,9 @@
                                     <p class="clr-white" style="opacity: .7;">Оператор call центра</p>
                                 </div>
                             </div>
-                            <div class="review__slider__quote">
+                            <!-- <div class="review__slider__quote">
                                 <img src="./images/quote-img.png" alt="">
-                            </div>
+                            </div> -->
                             <div class="review__slider__body">
                                 <p class="clr-white">Я пришла в компанию в декабре 2021 без опыта в продажах. На тот момент я училась в 11 классе и график работы идеально подходил под школьное расписание. Наставники и опытные коллеги помогли быстро освоится и всему научиться. По окончании школы я стала старшим менеджером - теперь обучаю новых ребят и помогаю им вливаться в коллектив.</p>
                             </div>
@@ -299,16 +301,22 @@
                     </div>
                     <div class="form__contacts__data">
                         <img src="./images/location_icon.svg" alt="">
-                        <p>г. Москва, ул. Давыдковская, д. 3, блок 1, подъезд 3, этаж 2. 7 мин. пешком от станции м. Славянский бульвар, мимо ТЦ «Океания» до ЖК «Эдельвейс».</p>
+                        <p>Москва, ул. Давыдковская, д. 3, блок 1, подъезд 3, этаж 2. 7 мин. пешком от станции м. Славянский бульвар</p>
                     </div>
                 </div>
                 <div class="form__submit">
                   <h3>Запишись на собеседование</h3>
-                  <form action="./php/form0.php" method="post">
-                    <input type="text" id="name" class="form__submit__field" name="name" placeholder="Имя">
-                    <input type="tel" id="phone" class="form__submit__field" name="phone" placeholder="Номер телефона">
+                  <form action="mail.php" method="post" enctype="multipart/form-data">
+                    <input type="text" id="name" class="form__submit__field input input-name" name="name" placeholder="Имя">
+                    <input type="tel" id="phone" data-validate-field="tel" class="form__submit__field input input-tel" name="phone" placeholder="Номер телефона">
+                    <input type="email" id="email" data-validate-field="email"  class="form__submit__field input input-mail" name="email" placeholder="Введите email">
+                    <label for="date">Дата рождения</label>
+                    <input type="date" id="date" class="form__submit__field input input-date" name="date" placeholder="Дата рождения">
+                    <label for="file[]">Приложите ваше резюме</label>
+                    <input class="form__submit__field input" type="file" name="file[]"  accept=".doc,.docx,.pdf" multiple id="myfile">
                     <p>Нажимая «Отправить», вы соглашаетесь с политикой конфиденциальности</p>
-                    <div class="btn btn-primary">Отправить</div>
+                    <button class="button btn btn-primary">Отправить</button>
+                    
                     <!-- <div>
                         <input type="text" id="name" name="name">
                         <label for="name">Имя:</label><br>
